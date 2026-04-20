@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f9ff; /* light blue bg */
+  color: #1e293b; /* dark slate text */
+  line-height: 1.5;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+header {
+  background: #1e40af; /* blue-800 */
+  color: #fff;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+nav h2 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #3b82f6; /* blue-500 */
+}
+
+nav #darkModeToggle {
+  background: #2563eb; /* blue-600 */
+  color: white;
+  border: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background: #0f172a; /* slate-900 */
+  color: #f1f5f9; /* slate-100 */
+}
+
+.dark-mode header {
+  background: #1e3a8a; /* blue-900 */
+}
+
+.dark-mode #skills li,
+.dark-mode #projects li,
+.dark-mode .project-card {
+  background: #1e293b; /* slate-800 */
+  color: #e2e8f0; /* slate-200 */
+}
+
+.dark-mode #home {
+  background: #1d4ed8; /* blue-700 */
+}
+
+#home {
+  background: #2563eb; /* blue-600 */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#home .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home h1 {
+  font-size: 48px;
+}
+
+#home p {
+  font-size: 20px;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  background: white;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.project-card h3 {
+  color: #3b82f6; /* blue-500 */
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 12px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background: #2563eb; /* blue-600 */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background: #1d4ed8; /* blue-700 */
+  transform: scale(1.05);
+}
+
+.btn-container {
+  margin-top: 10px;
+}
+
+#projects li {
+  background: white;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#resume a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #2563eb; /* blue-600 */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#resume a:hover {
+  background: #1d4ed8; /* blue-700 */
+  transform: scale(1.05);
+}
+
+footer {
+  background: #1e40af; /* blue-800 */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home .hero-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #home h1 {
+    font-size: 32px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+}
+
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.hero-container .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #1e40af;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.hero-container .social-links a:hover {
+  background: #1d4ed8;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
