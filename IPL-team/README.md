@@ -46,7 +46,8 @@ The site showcases team information, match schedules, player profiles, statistic
 
 ---
 
-## Live Link
+## 🚀 Live Demo
+Check out the deployed site here: [MI IPL Team Website](https://mi-ipl-team.vercel.app)
 
 ---
 
