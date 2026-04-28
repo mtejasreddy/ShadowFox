@@ -27,6 +27,11 @@ Code
 
 ---
 
+## Live Demo
+Check out the deployed site here: [Personal Portfolio](https://personal-portfolio-delta-five-93.vercel.app/)
+
+---
+
 ## How to Run Locally
 
 1. Clone the repository:
