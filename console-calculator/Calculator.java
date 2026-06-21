@@ -54,8 +54,17 @@ public class Calculator {
     public static void main(String[] args) {
         while (true) {
             System.out.println("/n--- Calculator Menu ---");
-            System.out.println(
-                    "1. Add/n2. Subtract/n3. Multiply/n4. Divide/n5. Square Root/n6. Power/n7. Celsius to Fahrenheit/n8. Fahrenheit to Celsius/n9. INR to USD/n10. USD to INR/n11. Exit");
+            System.out.println("1. Add");
+            System.out.println("2. Subtract");
+            System.out.println("3. Multiply");
+            System.out.println("4. Divide");
+            System.out.println("5. Square Root");
+            System.out.println("6. Power");
+            System.out.println("7. Celsius to Fahrenheit");
+            System.out.println("8. Fahrenheit to Celsius");
+            System.out.println("9. INR to USD");
+            System.out.println("10. USD to INR");
+            System.out.println("11. Exit");
             System.out.print("Choose an option: ");
             int choice = sc.nextInt();
 
@@ -114,6 +123,11 @@ public class Calculator {
                     a = sc.nextDouble();
                     System.out.println("INR: " + usdToInr(a));
                     break;
+
+                case 11:
+                    System.out.println("Exiting...");
+                    sc.close();
+                    return;
 
                 default:
                     System.out.println("Invalid choice!");
